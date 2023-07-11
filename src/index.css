@@ -1,0 +1,22 @@
+:root {
+    --color1: #020100;
+	--color2: rgb(255, 209, 6);
+	--color3: rgb(60, 5, 5);
+	--color4: rgb(60, 5, 5);
+
+
+}
+
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+
+
+html{
+	scroll-behavior: smooth;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+   }

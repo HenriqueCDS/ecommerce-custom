@@ -1,0 +1,59 @@
+.initalHome {
+    display: flex;
+    position: relative;
+  
+
+}
+.img{
+   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.apresentacao{
+    display: flex;
+    margin-top: 5%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+    animation:opacity 4s ease  ;
+}
+
+
+.apresentacao .texto{ 
+    color: aliceblue;
+    font-size: 3rem;
+  
+}
+.apresentacao .span{ 
+    color: var(--color2);
+    font-size: 3rem;
+   
+}
+
+.apresentacao .float{ 
+   animation: float 1s infinite ease-in-out alternate;
+   
+}
+
+@keyframes opacity {
+    from {
+        transform: translateY(-100px);
+        opacity:0%;
+       
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity:100%;
+        
+    }
+} 
+@keyframes float {
+    from { transform: translateY(10px);}
+    to { transform: translateY(0px);}
+} 
