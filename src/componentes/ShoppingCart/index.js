@@ -1,11 +1,25 @@
 // components/ShoppingCart.js
 import React from 'react';
-
+import style from './ShoppingCart.module.css';
+import produtos from './produtos.json';
+import ProdutoCart from '../ProdutoCart'
 function ShoppingCart() {
   return (
-    <div>
-      <h4>Shopping Cart</h4>
-      {/* Add your shopping cart components here */}
+    <div className={style.container}>
+        <h2>
+          Carrinho:
+        </h2>
+        {produtos.map(produto => (
+          <ProdutoCart
+            {...produto}
+            key={produto.id}
+            valor={produto.price}
+          />
+        ))}
+        
+        <button>Continuar</button>
+      
+   
     </div>
   );
 }

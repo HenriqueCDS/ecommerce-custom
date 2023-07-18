@@ -14,7 +14,7 @@ export default function Inicio() {
                     <h1>Conteudo que voce procura não foi encontrado!</h1>
               
 
-                <img src={gifNotfound} alt='Não encontrado'/>
+                <img src={gifNotfound}  className={styles.img} alt='Não encontrado'/>
              </section>    
         
         </>

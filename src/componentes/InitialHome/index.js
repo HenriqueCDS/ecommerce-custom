@@ -12,7 +12,7 @@ export default function InitialHome() {
                      <div>
                          <h1 className={home.texto}>Bem-vindo a</h1>
                          <h2 className={home.texto}>Lancheonete <span className={home.span}>Shop</span> Now</h2>
-                         <CaretCircleDoubleDown   className={home.float} size={60}  color='rgb(255, 209, 6)'/>
+                         <CaretCircleDoubleDown   className={home.float} size={60}  color='var(--color2)'/>
                      </div>
                      
                      

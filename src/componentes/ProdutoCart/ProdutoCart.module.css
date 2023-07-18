@@ -1,0 +1,48 @@
+.container{
+    margin: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: solid 1px black;
+
+}
+.container .bloco1 {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.container  p {
+      font-size: 22px;
+      font-weight: bold;
+      padding: 5px 0 0 5px;
+    }
+.container span {
+      font-size: 16px;
+    }
+.container img {
+    height:30%;
+    width:30%;
+}
+.container button{
+    margin: 0.5rem;
+    background-color: var(--color2); 
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.container button:active{
+   transform: scale(80%); 
+   background-color: var(--color2);
+}
+
+.container .bloco2 {
+  
+    align-items: center;
+    display: flex;
+  
+}
