@@ -3,9 +3,12 @@ import React from 'react';
 import header from './header.module.css';
 import { Link } from 'react-router-dom';
 import { ShoppingCart  } from 'phosphor-react';
-
+import { useContext } from 'react';
+import { useCarrinhoContext } from '../../contextos/carrinho';
 
 function Header() {
+
+  const { quantidadeProdutos } = useCarrinhoContext();
   return (
     <header>
      
@@ -34,9 +37,15 @@ function Header() {
         <div className={header.cart}>
         <ul>
             <li className={header.navbar}>
-              <Link className={header.link} to="/"><ShoppingCart  size={28} color='white'/>
+              <div className={header.shopCart} >
+                <Link className={header.link} to="/cart"><ShoppingCart  size={28} color='white'/>
+                
+                </Link>
+                <h4>{quantidadeProdutos==0?null:quantidadeProdutos}</h4>
+              </div>
+                
 
-              </Link>
+             
             </li>
       
         </ul>

@@ -21,6 +21,7 @@ export const CarrinhoProvider = ({ children }) => {
 };
 
 export const useCarrinhoContext = () => {
+  
   const {
     carrinho, 
     setCarrinho,
@@ -33,9 +34,11 @@ export const useCarrinhoContext = () => {
       if(itemDoCarrinho.id === id) itemDoCarrinho.quantidade += quantidade;
       return itemDoCarrinho;
     });
+   
   }
 
   function adicionarProduto(novoProduto) {
+     console.log(novoProduto)
     const temOProduto = carrinho.some(itemDoCarrinho => itemDoCarrinho.id === novoProduto.id);
     if(!temOProduto) {
       novoProduto.quantidade = 1;

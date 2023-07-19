@@ -14,6 +14,7 @@ function ShoppingCart() {
             {...produto}
             key={produto.id}
             valor={produto.price}
+            nome = {produto.name}
           />
         ))}
         

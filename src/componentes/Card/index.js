@@ -1,27 +1,24 @@
 // components/Product.js
 import React from 'react';
 import style from './produto.module.css';
-import { Route, Redirect  } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import { useContext } from 'react';
-import { CarrinhoContext } from '../../contextos/carrinho';
+import { useCarrinhoContext } from '../../contextos/carrinho';
 
-function Card({ name, image, price }) {
-  const {carrinho, setCarrinho} = useContext(CarrinhoContext);
+function Card({ id, name, image, price }) {
+  const { carrinho, adicionarProduto, removerProduto } = useCarrinhoContext();
+  const produtoNoCarrinho = carrinho.find(itemDoCarrinho => itemDoCarrinho.id=== id);
+ 
   return (
-    <div className={style.container}  onClick={() => redirect()}>
-      <img src={image} alt={name} />
-      <h3>{name}</h3>
-      <p>{price}</p>
-      
-    </div>
+    <Link className ={style.link}  to={`/product/${id}`}>
+      <div className={style.container} >
+        <img src={image} alt={name} />
+        <h3>{name}</h3>
+        <p>{price}</p>
+      </div>
+    </Link>
   );
 }
-function redirect() {
-  return (
-    <Route exact path="/" render={() => (
-      <redirect to="/sobre"/>
-    )}/>
-  );
-}
+
 
 export default Card;

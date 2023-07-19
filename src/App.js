@@ -18,8 +18,9 @@ function App() {
    
       <div className="App">
         <BrowserRouter>
-         <Header />
-            <CarrinhoProvider>
+         
+          <CarrinhoProvider>
+            <Header />
               <Routes> 
                       <Route exact path="/" element={<Home/>} />
                       <Route path="/product/:id" element={<ProductDetails/>} />
@@ -28,8 +29,8 @@ function App() {
                       <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
                       <Route path="*" element={<NotFound />}/>
                 </Routes>
-              </CarrinhoProvider>
-            <Footer />
+             <Footer />
+          </CarrinhoProvider>
           </BrowserRouter>
       
       </div>

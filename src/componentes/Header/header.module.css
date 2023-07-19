@@ -16,6 +16,7 @@
     text-decoration: none;
     
   }
+  
   .link {
     color: #f1f1f1;
     text-decoration: none;
@@ -24,8 +25,12 @@
 
   }
   
-  .cart{
-    margin: 1rem;
-
+  .shopCart{
+    display: flex;
+    
+    align-items: center;
+    color: #f1f1f1;
+    transition: 1s ease-in-out;
   }
+
   
