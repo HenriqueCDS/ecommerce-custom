@@ -22,8 +22,9 @@
       font-size: 16px;
     }
 .container img {
-    height:30%;
-    width:30%;
+    height:200px;
+    width:200px;
+   
 }
 .container button{
     margin: 0.5rem;

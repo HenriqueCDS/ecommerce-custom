@@ -20,7 +20,7 @@ function ProdutoCart({
             alt={`foto de ${nome}`}
           />
           <p>
-            {nome}  R$ {valor} <span>Kg</span>
+            {nome}  R$ {valor} 
           </p>
         </div>
         <div className={style.bloco2} >
