@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
        <InitialHome />
-       <Sobre />
+     
        <CardList />
        
       
