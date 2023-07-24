@@ -1,0 +1,57 @@
+.container{
+    margin: 2%;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+
+    
+}
+.container h1{
+    text-align: left;
+    font-size: 2rem;
+    
+    
+}
+.container form{
+    
+    display: flex;
+    flex-direction: column;
+   
+   
+    transition: 0.5s ease;
+  
+}
+
+.container input{
+    margin: 0.5rem;
+ 
+    padding: 12px 32px;
+    text-align: center;
+    transition: 0.5s ease;
+  
+}
+
+
+
+.container button{
+    margin: 0.5rem;
+    background-color: var(--color2); 
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+  
+}
+.container button:active{
+    transform: scale(90%); 
+    background-color: var(--color2);
+ }
+ .container button:disabled{
+    
+    background-color: var(--color3);
+ }

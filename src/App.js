@@ -9,6 +9,8 @@ import Home from './pages/Home/Home';
 import Cart from './pages/Cart';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 import { CarrinhoProvider } from './contextos/carrinho.js';
 
@@ -27,6 +29,9 @@ function App() {
                       <Route path="/cart" element={<Cart/>} />
                       
                       <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
+                      
+                      <Route path="/register" element={<Register />} />
+                      <Route path="/login" element={<Login />} />
                       <Route path="*" element={<NotFound />}/>
                 </Routes>
              <Footer />
