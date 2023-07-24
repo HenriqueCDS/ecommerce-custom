@@ -5,7 +5,7 @@ import InitialHome from '../../componentes/InitialHome';
 import Sobre from '../../componentes/Sobre';
 
 
-function Home() {
+export default function Home() {
   return (
     <div>
        <InitialHome />
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+
