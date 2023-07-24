@@ -1,36 +1,8 @@
-.navbar{
-  
-    display: flex;
-    height: 80px;
-    background-color:var(--color1);
-    align-items: center;
-    justify-content:space-around;
-    
-   
-  }
-
-  .navbar li {
-    
-    display: inline;
-    margin:  0.4rem;
-    text-decoration: none;
-    
-  }
-  
-  .link {
-    color: #f1f1f1;
-    text-decoration: none;
-    cursor: pointer;
-    
-
-  }
-  
-  .shopCart{
-    display: flex;
-    
-    align-items: center;
-    color: #f1f1f1;
-    transition: 1s ease-in-out;
-  }
-
-  
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1em 20em;
+  background-color: black;
+  color: red;
+}

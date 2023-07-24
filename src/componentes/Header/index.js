@@ -1,59 +1,35 @@
 // components/Header.js
 import React from 'react';
 import header from './header.module.css';
-import { Link } from 'react-router-dom';
-import { ShoppingCart  } from 'phosphor-react';
-import { useContext } from 'react';
+import { Heart, ShoppingCart, User } from 'phosphor-react';
 import { useCarrinhoContext } from '../../contextos/carrinho';
+import CabecalhoLink from './CabecalhoLink'
 
 function Header() {
 
   const { quantidadeProdutos } = useCarrinhoContext();
+  console.log('carrinho:', quantidadeProdutos);
   return (
-    <header>
-     
-      <nav className={header.navbar}>
-      
-        <div className={header.item1}>
+    <header className={header.cabecalho}>
+      <CabecalhoLink to="/">
+        Logo
+      </CabecalhoLink>
+      <nav>
+        <CabecalhoLink url='/'> <User size={28} />
+          Home
+        </CabecalhoLink>
 
-        <ul>
-            <li className={header.navbar}>
-              <Link className={header.link} to="/">Home</Link>
-            </li>
-            <li className={header.navbar}>
-              <Link className={header.link} to="/">Sobre Nós</Link>
-            </li>
-            <li className={header.navbar}>
-              <Link className={header.link} to="/">Produtos </Link>
-            </li>
-            
-            <li>
-              <Link className={header.link} to="/">Serviços</Link>
-            </li>
-        </ul>
-        </div>
-
-
-        <div className={header.cart}>
-        <ul>
-            <li className={header.navbar}>
-              <div className={header.shopCart} >
-                <Link className={header.link} to="/cart"><ShoppingCart  size={28} color='white'/>
-                
-                </Link>
-                <h4>{quantidadeProdutos==0?null:quantidadeProdutos}</h4>
-              </div>
-                
-
-             
-            </li>
-      
-        </ul>
-        </div>
-
+        <CabecalhoLink url='/'> <Heart size={28} />
+          Favoritos
+        </CabecalhoLink>
+        
+        <CabecalhoLink url='/cart'> <ShoppingCart size={28} />
+        Meus produtos 
+        </CabecalhoLink>
         
       </nav>
     </header>
+
   );
 }
 
