@@ -14,7 +14,7 @@ function Header() {
       <CabecalhoLink to="/">
         Logo
       </CabecalhoLink>
-      
+      <nav className={header.navbar}>
         <CabecalhoLink url='/'> <User size={28} />
           Home
         </CabecalhoLink>
@@ -26,6 +26,7 @@ function Header() {
         <CabecalhoLink url='/cart'> <ShoppingCart size={28} />
         Meus produtos 
         </CabecalhoLink>
+      </nav>
         
      
     </header>

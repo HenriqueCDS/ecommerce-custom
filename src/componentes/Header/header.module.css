@@ -6,3 +6,10 @@
   background-color: black;
   color: red;
 }
+.cabecalho .navbar{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
