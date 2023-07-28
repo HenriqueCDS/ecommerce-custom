@@ -1,5 +1,7 @@
 
 import style from './login.module.css'
+import { useContext } from 'react';
+import { UsuarioContext } from '../../contextos/usario';
 export default function login(params) {
 
     return (
