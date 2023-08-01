@@ -14,7 +14,7 @@ import Register from './pages/Register';
 
 import { CarrinhoProvider } from './contextos/carrinho.js';
 import { UsuarioProvider } from './contextos/usario.js';
-
+import { FavoritoProvider } from './contextos/favorito.js';
 
 function App() {
   return (
@@ -25,10 +25,11 @@ function App() {
           <CarrinhoProvider>
             <Header />
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/product/:id" element={<ProductDetails />} />
-              <Route path="/cart" element={<Cart />} />
-
+              
+                <Route exact path="/" element={<Home />} />
+                <Route path="/product/:id" element={<ProductDetails />} />
+                <Route path="/cart" element={<Cart />} />
+              
               <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
 
               <Route path="/register" element={<Register />} />
