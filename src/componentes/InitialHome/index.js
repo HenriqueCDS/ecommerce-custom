@@ -1,9 +1,8 @@
 import home from './homes.module.css';
-import img from './background.png';
 import { useState, useEffect } from 'react';
 import { CaretCircleDoubleDown } from 'phosphor-react';
 import { Swiper, SwiperSlide, } from 'swiper/react';
-import { EffectFade } from 'swiper/modules';
+import { EffectCoverflow, Autoplay } from 'swiper/modules';
 
 
 export default function InitialHome() {
@@ -37,8 +36,10 @@ export default function InitialHome() {
 
         <section className={home.initalHome}>
             <Swiper
-                modules={[EffectFade]}
-                effect='fade'
+                modules={[EffectCoverflow, Autoplay]}
+                autoplay={{delay:4000}}
+                effectcoverflow={{slideShadows: true}}
+                effect='coverflow'
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 navigation
