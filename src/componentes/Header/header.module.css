@@ -2,17 +2,15 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1.1em 20em;
+  padding: 0.7em 4em;
   background-color: black;
   gap: 1rem;
   
 }
 .cabecalho .navbar{
-  
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 .logo {
   display: flex;
@@ -23,26 +21,4 @@
   color:white;
   
 }
-.cabecalho .pesquisa{
-    display: flex;
-    flex-direction: column;
-}
-
-.cabecalho input{
-    border: 1px solid #FFF;
-    background: transparent;
-    padding: 20px 100px;
-    color: #FFF;
-    font-size: 1rem;
-    transition: 1s ea;
-}
-
-.cabecalho .result {
-  color: black;
-  background-color: #FFF;
-  text-align: center;
-  cursor: pointer;
- 
-}
-
 
