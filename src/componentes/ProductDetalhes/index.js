@@ -28,7 +28,7 @@ function ProductDetails() {
     <div className={style.block2}>
       <h1 className={style.name}>{product.name}</h1>
       <p className={style.description}>{product.details}</p>
-      <h3 className={style.price}> R{product.price}</h3>
+      <h3 className={style.price}> R$ {product.price}</h3>
       <div >
         <label >Quantidade:</label>
         <input

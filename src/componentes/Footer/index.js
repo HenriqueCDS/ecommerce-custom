@@ -33,7 +33,7 @@ function Footer() {
                    
                 </div>
                 <div className={footer.footerBottom}><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                    <p class="copyright">HenriqueDevs ツ© 2023</p>
+                    <p class="copyright">copyright© 2023</p>
                     <div className={footer.footerContact}>
                     <ul>
                       <li><a href="#"><i class="fab fa-facebook-f"><FacebookLogo size={24} /></i></a></li>
