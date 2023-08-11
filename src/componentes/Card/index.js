@@ -2,25 +2,32 @@
 import React from 'react';
 import style from './produto.module.css';
 import { Link  } from "react-router-dom";
-import { useContext } from 'react';
-import { useCarrinhoContext } from '../../contextos/carrinho';
-import { Heart } from 'phosphor-react';
+import { useFavoritoContext } from '../../contextos/favoritos';
+
+import { Heart,ShoppingCart } from 'phosphor-react';
 
 function Card({ id, name, image, price }) {
-  const { carrinho, adicionarProduto, removerProduto } = useCarrinhoContext();
-  const produtoNoCarrinho = carrinho.find(itemDoCarrinho => itemDoCarrinho.id=== id);
- 
+    const { favorito, adicionarFavorito } = useFavoritoContext();
+    const ehFavorito = favorito.some((fav) => fav.id === id);
+    const icone = !ehFavorito ? "thin" : "fill" ;
+   
   return (
-    <Link className ={style.link}  to={`/product/${id}`}>
+    
       <div className={style.container} >
       
         <img src={image} alt={name} />
         <h3>{name}</h3>
         <p>{price}</p>
-       
-        <button><Heart /></button>
+        <div>
+          <button><Heart size={24} weight={icone}  onClick={()=>{
+            adicionarFavorito({ id, name, image, price })
+          }}/></button>
+          <Link className ={style.link}  to={`/product/${id}`}> <button><ShoppingCart size={24}/></button></Link>
+        </div>
+
+
       </div>
-    </Link>
+
   );
 }
 

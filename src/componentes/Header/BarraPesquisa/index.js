@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import json from '../../../json/produtos.json';
-import { useCarrinhoContext } from '../../../contextos/carrinho';
+
 import header from './barraPesquisa.module.css';
 import { MagnifyingGlass, X } from 'phosphor-react';
 import { Link } from "react-router-dom";

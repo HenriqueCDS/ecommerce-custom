@@ -21,7 +21,7 @@ function Header() {
           Home
         </CabecalhoLink>
 
-        <CabecalhoLink url='/'> <Heart size={28} />
+        <CabecalhoLink url='/favoritos'> <Heart size={28} />
           Favoritos
         </CabecalhoLink>
 
@@ -29,8 +29,6 @@ function Header() {
           Meus produtos
         </CabecalhoLink>
       </nav>
-
-
     </header>
 
   );

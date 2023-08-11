@@ -11,10 +11,10 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Register from './pages/Register';
-
+import Favoritos from './pages/Favoritos';
 import { CarrinhoProvider } from './contextos/carrinho.js';
 import { UsuarioProvider } from './contextos/usario.js';
-import { FavoritoProvider } from './contextos/favorito.js';
+import { FavoritosProvider } from './contextos/favoritos';
 
 function App() {
   return (
@@ -23,20 +23,24 @@ function App() {
       <BrowserRouter>
         <UsuarioProvider>
           <CarrinhoProvider>
-            <Header />
-            <Routes>
-              
+            <FavoritosProvider>
+              <Header />
+              <Routes>
+
                 <Route exact path="/" element={<Home />} />
                 <Route path="/product/:id" element={<ProductDetails />} />
                 <Route path="/cart" element={<Cart />} />
-              
-              <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
 
-              <Route path="/register" element={<Register />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
+
+                <Route path="/favoritos" element={<Favoritos />} />
+                <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
+
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <Footer />
+            </FavoritosProvider>
           </CarrinhoProvider>
         </UsuarioProvider>
       </BrowserRouter>
