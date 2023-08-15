@@ -2,12 +2,10 @@
   text-decoration: none;
   transition: 1s ease-in-out;
 }
-.link:hover{
-  transform: scale(105%);
-}
+
 
 .container{
-    
+    position: relative;
     background-color:rgb(255, 255, 255);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display: flex;
@@ -42,16 +40,23 @@
   .container img{
     height: 250px;
     object-fit: cover;
+   
+    
 
   } 
- 
+.container .button{
+
+  background-color: #007bff;
+  display: flex;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+}
 .container button{
  
-
+  background-color: #007bff;
   padding: 10px;
   font-size: 18px;
-  color: #fff;
-  background-color: #007bff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
