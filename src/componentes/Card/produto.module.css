@@ -24,14 +24,17 @@
     font-size: 2rem;
     text-align: center;
     padding-top: 0rem;
-    line-height: 0.5rem;
+
+
+    line-height: 0px;
     
   }
   .container  p{
     text-align: center;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 0.5rem;
+    line-height: 0px;
     color: #17181b;
+  
     font-size: 1rem;
    
     
@@ -39,12 +42,11 @@
   .container img{
     height: 250px;
     object-fit: cover;
-  
 
   } 
-  
+ 
 .container button{
-  margin-top:1rem;
+ 
 
   padding: 10px;
   font-size: 18px;

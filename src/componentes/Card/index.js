@@ -18,7 +18,7 @@ function Card({ id, name, image, price }) {
         <img src={image} alt={name} />
         <h3>{name}</h3>
         <p>{price}</p>
-        <div>
+        <div className={style.button}>
           <button><Heart size={24} weight={icone}  onClick={()=>{
             adicionarFavorito({ id, name, image, price })
           }}/></button>

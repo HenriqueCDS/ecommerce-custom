@@ -8,10 +8,10 @@ import { EffectCoverflow, Autoplay } from 'swiper/modules';
 export default function InitialHome() {
     const [slidesView, setSlidesView] = useState();
     const data = [
-        { id: '1', image: 'https://www.designi.com.br/images/preview/10030839.jpg' },
-        { id: '2', image: 'https://th.bing.com/th/id/OIP.4oYMiinj_pzAzXAWLWHa_AHaHa?pid=ImgDet&rs=1' },
-        { id: '3', image: 'https://photos.enjoei.com.br/livro-alice-no-pais-das-maravilhas/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy81NTUyNzc2LzQ2MWUyYWU3ZGEwZjlmZDU3ZmFlZWE0ZTZmNDIwNTllLmpwZw' },
-        { id: '4', image: 'https://i.pinimg.com/736x/d0/51/51/d0515171a66adac43a13916dc50d14aa.jpg' }
+
+        { id: '1', image: 'https://artwalk.vteximg.com.br/arquivos/ids/434947/3737 - AW BANNER - DESKTOP 3.png?v=638276176489030000' },
+        { id: '2', image: 'https://artwalk.vteximg.com.br/arquivos/ids/434933/3737 - AW BANNER - DESKTOP 2.png?v=638273796587200000' },
+        { id: '3', image: 'https://artwalk.vteximg.com.br/arquivos/ids/434930/3737 - AW BANNER - DESKTOP 1.png?v=638273774150700000' }
     ]
     // useEffect(() => {
     //     function manipulaTamanhoTela() {
