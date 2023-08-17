@@ -13,6 +13,7 @@
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    border-radius: 20px;
     
 }
 .container  h3{
@@ -40,13 +41,14 @@
   .container img{
     height: 250px;
     object-fit: cover;
+    border-radius: 20px;
    
     
 
   } 
 .container .button{
 
-  background-color: #007bff;
+  
   display: flex;
   gap:1rem;
   justify-content: center;
@@ -54,7 +56,7 @@
 }
 .container button{
  
-  background-color: #007bff;
+  background-color: #ffff;
   padding: 10px;
   font-size: 18px;
   border: none;

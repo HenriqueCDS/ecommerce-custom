@@ -1,8 +1,30 @@
 [
-    { "id": 1, "name": "Product 1", "image": "https://images.unsplash.com/photo-1552066344-2464c1135c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80","details":"tenis ", "price": 99.99 },
-    { "id": 2, "name": "Product 2", "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80","details":"tenis ", "price": 119.99 },
-    { "id": 3, "name": "Product 3", "image": "https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80","details":"tenis ", "price": 94.99 },
-    { "id": 4, "name": "Product 4", "image": "https://images.unsplash.com/photo-1549298916-f52d724204b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=813&q=80","details":"tenis ", "price": 74.99 },
-    { "id": 5, "name": "Product 5", "image": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80","details":"tenis ", "price": 54.99 }
- 
+    {
+        "id": 1,
+        "name": "Adidas forum low",
+        "image": "https://images.unsplash.com/photo-1620794341491-76be6eeb6946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
+        "details": "Adidas forum low masculino",
+        "price": 99.99
+    },
+    {
+        "id": 2,
+        "name": " Air Jordan 1 Low",
+        "image": "https://images.unsplash.com/photo-1626466368754-f1c67d680345?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1426&q=80",
+        "details": " Air Jordan 1 Low masculino",
+        "price": 119.99
+    },
+    {
+        "id": 3,
+        "name": "CLYDE OG",
+        "image": "https://images.unsplash.com/photo-1508147145048-f856f4af2fae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "details": "CLYDE OG ",
+        "price": 94.99
+    },
+    {
+        "id": 4,
+        "name": "Air max 270",
+        "image": "https://images.unsplash.com/photo-1562613521-6b5293e5b0ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "details": "Air max 270 ",
+        "price": 74.99
+    }
 ]

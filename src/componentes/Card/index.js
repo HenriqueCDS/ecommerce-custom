@@ -19,7 +19,7 @@ function Card({ id, name, image, price }) {
         <h3>{name}</h3>
         <p>{price}</p>
         <div className={style.button}>
-          <button><Heart size={24} weight={icone}  onClick={()=>{
+          <button><Heart size={24} weight={icone} color='red'  onClick={()=>{
             adicionarFavorito({ id, name, image, price })
           }}/></button>
           <Link className ={style.link}  to={`/product/${id}`}> <button><ShoppingCart size={24}/></button></Link>

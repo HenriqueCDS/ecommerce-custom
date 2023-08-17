@@ -3,7 +3,6 @@ import React from 'react';
 import Card from '../Card';
 import styles from './ProdutosLists.module.css';
 import products from '../../json/produtos.json'
-import { Link } from 'react-router-dom';
 function CardList() {
   
 
