@@ -3,6 +3,12 @@
         "id": 1,
         "name": "Adidas forum low",
         "image": "https://images.unsplash.com/photo-1620794341491-76be6eeb6946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=694&q=80",
+        "imageDetails":[
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGA72apxvDynFVgN6bL1a-jjV_Xo8EcW0xZIrgqU6DrzxSdAUTEnRI-blQW58ynM67mRPAzyHE9sbEZgcRlSWFMiFCqZuL&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHN6Odl73rMQZTNVrbHIhryJd7skqTfLEkbWteojNWxWBifydSiJl8Bw5GC1ePtkjZ4OSgkJB9vPxMYPQlX34CfCXCyUmKtdYAEXq6ccU&usqp=CAE",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCr7OBIBpUAKz_8q7ofVHVj53ZxzN6wRXxT6fLhxGx5PkJEJvtl9I6rFIcKymNzo_m3nQe_ANPYh6D_fauUSXrceK6E3-qhA&usqp=CAY",
+            "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
+        ],
         "details": "Adidas forum low masculino",
         "price": 99.99
     },
@@ -10,6 +16,12 @@
         "id": 2,
         "name": " Air Jordan 1 Low",
         "image": "https://images.unsplash.com/photo-1626466368754-f1c67d680345?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1426&q=80",
+        "imageDetails":[
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGA72apxvDynFVgN6bL1a-jjV_Xo8EcW0xZIrgqU6DrzxSdAUTEnRI-blQW58ynM67mRPAzyHE9sbEZgcRlSWFMiFCqZuL&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHN6Odl73rMQZTNVrbHIhryJd7skqTfLEkbWteojNWxWBifydSiJl8Bw5GC1ePtkjZ4OSgkJB9vPxMYPQlX34CfCXCyUmKtdYAEXq6ccU&usqp=CAE",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCr7OBIBpUAKz_8q7ofVHVj53ZxzN6wRXxT6fLhxGx5PkJEJvtl9I6rFIcKymNzo_m3nQe_ANPYh6D_fauUSXrceK6E3-qhA&usqp=CAY",
+            "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
+        ],
         "details": " Air Jordan 1 Low masculino",
         "price": 119.99
     },
@@ -17,12 +29,24 @@
         "id": 3,
         "name": "CLYDE OG",
         "image": "https://images.unsplash.com/photo-1508147145048-f856f4af2fae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        "imageDetails":[
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGA72apxvDynFVgN6bL1a-jjV_Xo8EcW0xZIrgqU6DrzxSdAUTEnRI-blQW58ynM67mRPAzyHE9sbEZgcRlSWFMiFCqZuL&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHN6Odl73rMQZTNVrbHIhryJd7skqTfLEkbWteojNWxWBifydSiJl8Bw5GC1ePtkjZ4OSgkJB9vPxMYPQlX34CfCXCyUmKtdYAEXq6ccU&usqp=CAE",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCr7OBIBpUAKz_8q7ofVHVj53ZxzN6wRXxT6fLhxGx5PkJEJvtl9I6rFIcKymNzo_m3nQe_ANPYh6D_fauUSXrceK6E3-qhA&usqp=CAY",
+            "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
+        ],
         "details": "CLYDE OG ",
         "price": 94.99
     },
     {
         "id": 4,
         "name": "Air max 270",
+        "imageDetails":[
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGA72apxvDynFVgN6bL1a-jjV_Xo8EcW0xZIrgqU6DrzxSdAUTEnRI-blQW58ynM67mRPAzyHE9sbEZgcRlSWFMiFCqZuL&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRHN6Odl73rMQZTNVrbHIhryJd7skqTfLEkbWteojNWxWBifydSiJl8Bw5GC1ePtkjZ4OSgkJB9vPxMYPQlX34CfCXCyUmKtdYAEXq6ccU&usqp=CAE",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCr7OBIBpUAKz_8q7ofVHVj53ZxzN6wRXxT6fLhxGx5PkJEJvtl9I6rFIcKymNzo_m3nQe_ANPYh6D_fauUSXrceK6E3-qhA&usqp=CAY",
+            "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
+        ],
         "image": "https://images.unsplash.com/photo-1562613521-6b5293e5b0ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         "details": "Air max 270 ",
         "price": 74.99
