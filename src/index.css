@@ -3,6 +3,8 @@
 	--color2: #007bff;
 	--color3: rgb(205, 237, 253);
 	--color4: rgb(60, 5, 5);
+	--mont22: 22px;
+	--mont42:42px
 }
 
 body {
@@ -13,5 +15,5 @@ body {
 
 html{
 	scroll-behavior: smooth;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
-   }
+	font-family: 'Montserrat';    
+}

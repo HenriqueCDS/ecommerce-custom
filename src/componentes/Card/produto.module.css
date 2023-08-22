@@ -17,14 +17,9 @@
     
 }
 .container  h3{
-    
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    color: #17181b;
-    font-size: 2rem;
+  font-size: var(--mont22);
     text-align: center;
     padding-top: 0rem;
-
-
     line-height: 0px;
     
   }
@@ -33,10 +28,8 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 0px;
     color: #17181b;
-  
     font-size: 1rem;
    
-    
   }
   .container img{
     height: 250px;
