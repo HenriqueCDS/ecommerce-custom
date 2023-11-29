@@ -10,7 +10,7 @@
             "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
         ],
         "details": "Adidas forum low masculino",
-        "price": "R$99.99" 
+        "price": 99.99 
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
             "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
         ],
         "details": " Air Jordan 1 Low masculino",
-        "price": "R$119.99" 
+        "price": 119.99
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
             "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRidUJ7-aX3z__eMr9aOM-cul2AX4Y1_wBbNwUhb40pCWzdlg_v6287KQ9ooZasmV9Bl0DTeXzVrPMbZARtRHFAMqTMRbr2HTEOIoPfSwPF&usqp=CAE"        
         ],
         "details": "CLYDE OG ",
-        "price": "R$94.99" 
+        "price": 94.99
     },
     {
         "id": 4,
@@ -49,6 +49,6 @@
         ],
         "image": "https://images.unsplash.com/photo-1562613521-6b5293e5b0ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         "details": "Air max 270 ",
-        "price": "R$74.99" 
+        "price": 74.99 
     }
 ]

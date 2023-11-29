@@ -44,7 +44,7 @@ export const useCarrinhoContext = () => {
   }
 
   function adicionarProduto(novoProduto) {
-     console.log(novoProduto)
+     
     const temOProduto = carrinho.some(itemDoCarrinho => itemDoCarrinho.id === novoProduto.id);
     if(!temOProduto) {
       novoProduto.quantidade = 1;

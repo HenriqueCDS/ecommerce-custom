@@ -10,9 +10,7 @@ function CardList() {
   return (
     <div className={styles.container}>
       {products.map((product) => (
-        <motion.card
-        whileHover={{scale:1.1}}
-        whileTap={{scale:0.9}}        > 
+        <motion.card whileHover={{scale:1.1}} > 
          <Card
           id={product.id}
           name={product.name}
