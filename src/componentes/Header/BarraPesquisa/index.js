@@ -38,14 +38,14 @@ export default function Seachbar() {
             </div>
             {livrosProdutos.length != 0 && (
                 <div className={header.result}>
-                    <ul>
+                    <div className={header.resutItem}>
                         {
                             livrosProdutos.map(produto => (
-                                <li><Link className={header.link} to={`/product/${produto.id}`} >{produto.name}</Link></li>
+                                <div className={header.item}><Link className={header.link} to={`/product/${produto.id}`} >{produto.name}</Link></div>
                             ))
                         }
 
-                    </ul>
+                    </div>
                 </div>
             )}
 
