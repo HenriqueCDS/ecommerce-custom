@@ -1,0 +1,52 @@
+.container{
+    height: 30rem;
+    width: 70rem;
+    margin: auto;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 20rem 50rem;
+    align-self: center;
+    background-color: #FFFAFA;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cadastro{
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+.cadastro h1{
+    padding-top: 1rem;
+    color: white;
+    font-size: 40px;
+    
+}
+.cadastro h2{
+    padding-top: 1rem;
+    color: white;
+    font-size: medium;
+    
+}
+
+.cadastro h3{
+    padding-top: 2rem;
+    color: white;
+    font-size: small;
+
+}
+
+.cadastro button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+

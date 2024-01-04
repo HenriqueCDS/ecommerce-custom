@@ -9,12 +9,12 @@ import Home from './pages/Home/Home';
 import Cart from './pages/Cart';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import Login from './pages/Login';
 import Register from './pages/Register';
 import Favoritos from './pages/Favoritos';
 import { CarrinhoProvider } from './contextos/carrinho.js';
 import { UsuarioProvider } from './contextos/usario.js';
 import { FavoritosProvider } from './contextos/favoritos';
+import Registro from './componentes/Registrar/index.js';
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
                 <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
 
                 <Route path="/register" element={<Register />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="/cadastro" element={<Registro/>} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

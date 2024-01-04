@@ -8,8 +8,10 @@ import { useFavoritoContext } from '../../contextos/favoritos';
 import gifNotfound from  "./john-travolta.gif";
 function Favoritos() {
   const { favorito } = useFavoritoContext();
+  console.log("favoritos",favorito)
+  
   return (
-
+      
     <>
        <div className={fav.text} >
         {favorito.length === 0 ? (

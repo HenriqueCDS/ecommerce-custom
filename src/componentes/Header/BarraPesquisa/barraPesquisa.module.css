@@ -38,7 +38,7 @@ input{
 } 
 .result .resutItem .item{
     
-    padding: 2vh 14vw;
+    padding: 2vh 20vw;
     transition: 1s ease-in-out;
 }
 .result .resutItem .item .link{
