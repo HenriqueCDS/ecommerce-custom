@@ -1,5 +1,6 @@
 import style from './cadastro.module.css'
 import { User, EnvelopeSimple, LockSimple } from 'phosphor-react';
+import { mandaDadosCadastro } from '../../Services/services.js'
 
 
 export default function Cadastro() {
@@ -11,11 +12,12 @@ export default function Cadastro() {
         
         <User size={28}  />
         <input type="text" placeholder="Nome" name="uname" required /> 
+        <input type="text" placeholder="Sobre nome" name="uname" required /> 
         <EnvelopeSimple size={28} />
         <input type="text" placeholder="Email" name="email" required />
         <LockSimple size={28} />
         <input type="password" placeholder="Senha" name="psw" required />
-        <button type="submit">Cadastrar</button>
+        <button type="submit" onClick={() => mandaDadosCadastro()} >Cadastrar</button>
     </form>
 
 </div>
