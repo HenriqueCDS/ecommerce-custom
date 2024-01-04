@@ -1,14 +1,24 @@
 import { useState } from 'react';
-import Login from '../../componentes/Login';
+import Cadastro from '../../componentes/Cadastro';
 import style from './registro.module.css';
+import Login from '../../componentes/Login';
 
 
 export default function Registro() {
 
     const [Logado, setLogado] = useState(false);
+    const [Cadastrado, setCadastrado] = useState("Entrar")
 
     const TemLogin = () => {
-        setLogado(true)
+        if(Logado === false){
+            setLogado(true)
+            setCadastrado("Cadastrar")
+        }
+        else{
+            setLogado(false)
+            setCadastrado("Entrar")
+        }
+        
     }
 
     return (
@@ -18,9 +28,9 @@ export default function Registro() {
                     <h1>ShopNow</h1>
                     <h2>Bem-Vindo de volta!</h2>
                     <h3>Acesse sua conta agora mesmo.</h3>
-                    <button type="submit" onClick={() => TemLogin()} >Entrar</button>
+                    <button type="submit" onClick={() => TemLogin()} >{Cadastrado}</button>
                 </div>
-                {Logado ? <h1>Login</h1> : <Login/>}
+                {Logado ? <Login/> : <Cadastro/>}
                 
                
             </section>

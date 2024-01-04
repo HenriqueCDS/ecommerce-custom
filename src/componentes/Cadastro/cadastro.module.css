@@ -1,57 +1,59 @@
-.container{
+.registro{
     margin: 2%;
-   
     display: flex;
     justify-content: center;
     flex-direction: column;
-   
     
+}
 
+.formlogin h2{
+    text-align: center;
+    font-size: 2em;
+}
+.formlogin h3{
+    text-align: center;
+    color: #A5A5A5;
     
 }
-.container h1{
-    text-align: left;
-    font-size: 2rem;
-    
-    
-}
-.container form{
-    
+.registro .formlogin{
     display: flex;
     flex-direction: column;
-   
-   
     transition: 0.5s ease;
   
 }
 
-.container input{
-    margin: 0.5rem;
- 
+.formlogin input{
+    margin: 0.2rem;
     padding: 12px 32px;
-    text-align: center;
+    text-align: left;
     transition: 0.5s ease;
+    width:80%;
+    background-color: #F3EBEB;
   
 }
 
 
 
-.container button{
+.formlogin button{
     margin: 0.5rem;
-    background-color: var(--color2); 
+    background-color: black; 
     border: none;
     color: white;
     padding: 12px 32px;
     text-align: center;
+    align-self: center;
     text-decoration: none;
     transition: 0.5s ease;
+    width: 40%;
+    border-radius: 10px;
+    cursor: pointer;
   
 }
-.container button:active{
+.registro button:active{
     transform: scale(90%); 
     background-color: var(--color2);
  }
- .container button:disabled{
+ .registro button:disabled{
     
     background-color: var(--color3);
  }

@@ -1,19 +1,21 @@
-import style from './login.module.css';
-import { EnvelopeSimple, LockSimple } from 'phosphor-react';
+import style from './cadastro.module.css'
+import { User, EnvelopeSimple, LockSimple } from 'phosphor-react';
 
 
-export default function Login() {
+export default function Cadastro() {
   return (
     <div className={style.registro}>
     <form className={style.formlogin}>
-        <h2>Bem-vindo novamente!</h2>
+        <h2>Crie sua conta</h2>
         <h3>Preencha seus dados</h3>
         
+        <User size={28}  />
+        <input type="text" placeholder="Nome" name="uname" required /> 
         <EnvelopeSimple size={28} />
         <input type="text" placeholder="Email" name="email" required />
         <LockSimple size={28} />
         <input type="password" placeholder="Senha" name="psw" required />
-        <button type="submit">Login</button>
+        <button type="submit">Cadastrar</button>
     </form>
 
 </div>
