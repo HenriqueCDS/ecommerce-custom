@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+   
     border: solid 1px black;
 
 }
@@ -14,16 +14,17 @@
     gap: 20px;
 }
 .container  p {
-      font-size: 22px;
-      font-weight: bold;
-      padding: 5px 0 0 5px;
-    }
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 0 0 5px;
+}
 .container span {
-      font-size: 16px;
+    font-size: 16px;
     }
 .container img {
-    height:200px;
-    width:200px;
+    height:24vh;
+    width:15vw;
+    object-fit: cover;
    
 }
 .container button{
