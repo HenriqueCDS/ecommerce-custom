@@ -1,6 +1,6 @@
 import style from './cadastro.module.css'
 import { User, EnvelopeSimple, LockSimple } from 'phosphor-react';
-import { mandaDadosCadastro, pegaTodosCadastros } from '../../Services/services.js'
+import { mandaDadosCadastro } from '../../Services/services.js'
 import { useState } from 'react';
 
 
@@ -11,9 +11,6 @@ export default function Cadastro() {
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
 
-  function resetaForm(){
-
-  }
   return (
     <div className={style.registro}>
     <form className={style.formlogin}>

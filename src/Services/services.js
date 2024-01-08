@@ -1,35 +1,34 @@
 import axios from 'axios';
-import { redirect } from 'react-router-dom';
 
-
-async function mandaDadosCadastro({nome, sobreNome, email, senha}){
-        try {
-            await axios.post('http://localhost:4000/users', {
-                email: email,
-                fistName: nome,
-                lastName: sobreNome,
-                password: senha,
-            })
-            .then(() => {
-                alert('Usuario cadastrado');
-                window.location.href = '/';
-            })
-           
-        } catch (error) {
-            console.log('erro',error)
-        }
-       
-        
-    
-  
+async function mandaDadosCadastro({ nome, sobreNome, email, senha }) {
+    try {
+        const response = await axios.post('http://localhost:4000/usuarios', {
+            email: email,
+            primeiroNome: nome,
+            sobreNome: sobreNome,
+            senha: senha,
+            ativo: true
+        })
+        console.log('resposta front',response)
+        // .then(() => {
+        //     alert('Usuário cadastrado');
+        //     window.location.href = '/';
+        // })
+        // .catch(error => {
+        //     console.log('Erro no cadastro:', error);
+        // });
+    } catch (error) {
+        console.log('Erro assíncrono:', error);
+    }
 }
+
 
 
 
 async function pegaTodosCadastros(){
         try {
-            let url = "http://localhost:4000/users";
-            const response = await axios.get(url)
+            let url = "http://localhost:4000/usuarios";
+            await axios.get(url)
             .then(resposta => console.log(JSON.parse(resposta.request.response)))
             .then(()=> {
                 alert('caiu then')
