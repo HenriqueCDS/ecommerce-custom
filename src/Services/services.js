@@ -8,20 +8,17 @@ async function mandaDadosCadastro({ nome, sobreNome, email, senha }) {
             sobreNome: sobreNome,
             senha: senha,
             ativo: true
+            
         })
-        console.log('resposta front',response)
-        // .then(() => {
-        //     alert('Usuário cadastrado');
-        //     window.location.href = '/';
-        // })
-        // .catch(error => {
-        //     console.log('Erro no cadastro:', error);
-        // });
+        .then(() => {
+            alert("Cadastrado com sucesso!")
+            window.location.href="/"
+        })
+
     } catch (error) {
         console.log('Erro assíncrono:', error);
     }
 }
-
 
 
 

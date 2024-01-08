@@ -4,16 +4,24 @@ import { mandaDadosCadastro } from '../../Services/services.js'
 import { useState } from 'react';
 
 
-export default function Cadastro() {
+export default function Cadastro(evento) {
+
 
   const [nome, setNome] = useState("")
   const [sobreNome, setSobreNome] = useState("")
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
 
+  async function gerenciaNovoCadastro(evento){
+    evento.preventDefault();
+    const novoCadastro = await mandaDadosCadastro({nome, sobreNome, email, senha})
+    return novoCadastro
+
+  }
+
   return (
     <div className={style.registro}>
-    <form className={style.formlogin}>
+    <form className={style.formlogin} onSubmit={gerenciaNovoCadastro}>
         <h2>Crie sua conta</h2>
         <h3>Preencha seus dados</h3>
         
@@ -24,7 +32,7 @@ export default function Cadastro() {
         <input type="text" placeholder="Email" name="email" onChange={(event) => setEmail(event.target.value)} required />
         <LockSimple size={28} />
         <input type="password" placeholder="Senha" name="psw" onChange={(event) => setSenha(event.target.value)} required />
-        <button type="submit" onClick={() => mandaDadosCadastro({nome, sobreNome, email, senha})} >Cadastrar</button>
+        <button type="submit" >Cadastrar</button>
     </form>
 
 </div>
