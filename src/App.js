@@ -11,7 +11,7 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Favoritos from './pages/Favoritos';
 import { CarrinhoProvider } from './contextos/carrinho.js';
-import { UsuarioProvider } from './contextos/usario.js';
+import { UsuarioProvider } from './contextos/usuario.js';
 import { FavoritosProvider } from './contextos/favoritos';
 import Registro from './pages/Registro/index.js';
 

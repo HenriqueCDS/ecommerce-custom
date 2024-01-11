@@ -35,6 +35,6 @@ export default function Cadastro(evento) {
         <button type="submit" >Cadastrar</button>
     </form>
 
-</div>
+  </div>
   )
 }
