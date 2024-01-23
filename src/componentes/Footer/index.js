@@ -32,13 +32,13 @@ function Footer() {
                     </div>
                    
                 </div>
-                <div className={footer.footerBottom}><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                    <p class="copyright">copyright© 2023</p>
+                <div className={footer.footerBottom}><a href="#"><i className="icon ion-social-facebook"></i></a><a href="#"><i className="icon ion-social-twitter"></i></a><a href="#"><i className="icon ion-social-snapchat"></i></a><a href="#"><i className="icon ion-social-instagram"></i></a>
+                    <p className="copyright">copyright© 2023</p>
                     <div className={footer.footerContact}>
                     <ul>
-                      <li><a href="#"><i class="fab fa-facebook-f"><FacebookLogo size={24} /></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i><InstagramLogo size={24}/></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i><TwitterLogo size={24} /></a></li>
+                      <li><a href="#"><i className="fab fa-facebook-f"><FacebookLogo size={24} /></i></a></li>
+                      <li><a href="#"><i className="fab fa-instagram"></i><InstagramLogo size={24}/></a></li>
+                      <li><a href="#"><i className="fab fa-twitter"></i><TwitterLogo size={24} /></a></li>
                     </ul>
                     </div>
                 </div>

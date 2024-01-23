@@ -10,18 +10,15 @@ function CardList() {
   return (
     <div className={styles.container}>
       {products.map((product) => (
-        <motion.card whileHover={{scale:1.1}} > 
-         <Card
+        <motion.card whileHover={{scale:1.1}} key={product.id}> 
+         <Card 
+          key={product.id}
           id={product.id}
           name={product.name}
           image={product.image}
           price={product.price}
         />
-        
-
         </motion.card>
-        
-       
       ))}
     </div>
   );

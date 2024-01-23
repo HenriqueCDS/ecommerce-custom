@@ -2,14 +2,12 @@
 // components/ProductList.js
 import React from 'react';
 import Card from '../../componentes/Card';
-import products from '../../json/produtos.json'
+
 import fav from './fav.module.css';
 import { useFavoritoContext } from '../../contextos/favoritos';
 import gifNotfound from  "./john-travolta.gif";
 function Favoritos() {
   const { favorito } = useFavoritoContext();
-  console.log("favoritos",favorito)
-  
   return (
       
     <>
@@ -26,6 +24,7 @@ function Favoritos() {
       <div className={fav.container} >
         {favorito.map((product) => (
           <Card
+            key={product.id}
             id={product.id}
             name={product.name}
             image={product.image}
