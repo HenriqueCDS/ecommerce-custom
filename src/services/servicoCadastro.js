@@ -10,10 +10,7 @@ async function mandaDadosCadastro({ nome, sobreNome, email, senha }) {
             ativo: true
             
         })
-        .then(() => {
-            alert("Cadastrado com sucesso!")
-            window.location.href="/"
-        })
+       return response;
 
     } catch (error) {
         console.log('Erro assíncrono:', error);

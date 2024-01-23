@@ -1,8 +1,8 @@
 import style from './cadastro.module.css'
 import { User, EnvelopeSimple, LockSimple } from 'phosphor-react';
-import { mandaDadosCadastro } from '../../Services/services.js'
+import { mandaDadosCadastro } from '../../services/servicoCadastro.js'
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Cadastro(evento) {
 
@@ -12,10 +12,13 @@ export default function Cadastro(evento) {
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
 
+  const navigate = useNavigate();
+
   async function gerenciaNovoCadastro(evento){
     evento.preventDefault();
-    const novoCadastro = await mandaDadosCadastro({nome, sobreNome, email, senha})
-    return novoCadastro
+    const response = await mandaDadosCadastro({nome, sobreNome, email, senha})
+    if(response.status === 200) return navigate('/');
+ 
 
   }
 
