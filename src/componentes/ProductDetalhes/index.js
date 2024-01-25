@@ -1,26 +1,48 @@
 // pages/ProductDetails.js
-import React from 'react';
+import {React,useState , useEffect} from 'react';
 import { Link, useParams } from 'react-router-dom';
-import products from '../../json/produtos.json';
+import { pegaProdutoEImagem } from '../../services/servicoProdutos';
 import style from './ProductDetalhes.module.css';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import { useCarrinhoContext } from '../../contextos/carrinho';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 
-import { useContext } from 'react';
+
 
 function ProductDetails() {
-  const { carrinho, adicionarProduto, removerProduto } = useCarrinhoContext();
+  const {  adicionarProduto } = useCarrinhoContext();
 
   const { id } = useParams();
-  const product = products.find((product) => {
-    return product.id === Number(id);
-  })
-  let name = product.name;
-  let image = product.image;
-  let price = product.price;
+
+  const [produto, setProduto ] = useState({});
+  const [imgs, setImgs ] = useState([" "]);
+  
+  
+
+  async function handlerProdutos () {
+    const response = await pegaProdutoEImagem(id);
+   
+    setProduto(response[0].Produto);
+    setImgs([
+      response[0].img1,
+      response[0].img2,
+      response[0].img3,
+      response[0].img4,
+    ]);
+   
+  }  
  
- console.log(product.imageDetails);
+  useEffect(()=>{
+    handlerProdutos();
+  },[])
+
+ 
+  let name = produto.nome;
+  let image = produto.img;
+  let price = produto.preco;
+
+
+
 
   return (
     <div className={style.container} >
@@ -36,7 +58,7 @@ function ProductDetails() {
             
             className={style.block1}
           >
-            {product.imageDetails.map((item) => (
+            {imgs.map((item) => (
               <SwiperSlide >
                 <img
                   src={item}
@@ -49,9 +71,9 @@ function ProductDetails() {
     
 
       <div className={style.block2}>
-        <h1 className={style.name}>{product.name}</h1>
-        <p className={style.description}>{product.details}</p>
-        <h3 className={style.price}> R$ {product.price}</h3>
+        <h1 className={style.name}>{name}</h1>
+        <p className={style.description}>{name}</p>
+        <h3 className={style.price}> R$ {price}</h3>
         <div >
           <label >Quantidade:</label>
           <input

@@ -1,22 +1,38 @@
 // components/ProductList.js
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import Card from '../Card';
 import styles from './ProdutosLists.module.css';
-import products from '../../json/produtos.json';
+import { pegaTodosOsProdutos } from '../../services/servicoProdutos';
 import { motion } from "framer-motion";
 function CardList() {
-  
 
+  const [produtos, setProdutos ] = useState([{}]);
+
+  async function handlerProdutos () {
+    const response = await pegaTodosOsProdutos();
+    setProdutos(response);
+  }  
+ 
+  useEffect(()=>{
+    handlerProdutos();
+  },[])
+
+
+  
   return (
+  
+ 
     <div className={styles.container}>
-      {products.map((product) => (
+      {
+        
+      produtos.map((product) => (
         <motion.card whileHover={{scale:1.1}} key={product.id}> 
          <Card 
           key={product.id}
           id={product.id}
-          name={product.name}
-          image={product.image}
-          price={product.price}
+          name={product.nome}
+          image={product.img}
+          price={product.preco}
         />
         </motion.card>
       ))}
