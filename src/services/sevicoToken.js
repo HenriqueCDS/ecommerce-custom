@@ -15,7 +15,7 @@ async function geraToken({ email, senha }) {
         
     } catch (error) {
         
-        console.log('Erro assíncrono:', error.response);
+        console.log('Erro assíncrono:', error);
         return error.response;
     }
 }
@@ -28,7 +28,7 @@ async function verificaToken(token) {
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTcwNjAzNjU4OCwiZXhwIjoxNzA2MDY1Mzg4fQ.5jonQ1Pf1w4p9414W8ludAX6FJ9uXGyS9HwZdvg18qo`
+                'Authorization': `Bearer ${token}`
               }
         })
         return response;

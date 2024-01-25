@@ -26,9 +26,7 @@ export const UsuarioProvider = ({ children }) => {
 
 export const useUsuario = () => {
   const context = useContext(UsuarioContext);
-  if (!context) {
-    throw new Error('useUser must be used within a UserProvider');
-  }
+
   return context;
 };
 
