@@ -34,7 +34,8 @@ function App() {
                 <Route path="/favoritos" element={<Favoritos />} />
                 <Route path="/sobre" element={<About titulo='Sobre Nos' />} />
 
-                <Route path="/cadastro" element={<Registro/>} />
+                <Route path="/login" element={<Registro/>} />
+                
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

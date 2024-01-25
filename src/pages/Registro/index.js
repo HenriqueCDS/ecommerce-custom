@@ -7,16 +7,20 @@ import Login from '../../componentes/Login';
 export default function Registro() {
 
     const [Logado, setLogado] = useState(false);
-    const [Cadastrado, setCadastrado] = useState("Entrar")
+    const [Cadastrado, setCadastrado] = useState("Cadastrar")
+   
+    
 
     const TemLogin = () => {
         if(Logado === false){
             setLogado(true)
             setCadastrado("Cadastrar")
+            
         }
         else{
             setLogado(false)
             setCadastrado("Entrar")
+            
         }
         
     }
@@ -30,7 +34,10 @@ export default function Registro() {
                     <h3>Acesse sua conta agora mesmo.</h3>
                     <button type="submit" onClick={() => TemLogin()} >{Cadastrado}</button>
                 </div>
-                {Logado ? <Login/> : <Cadastro/>}
+                {Logado ? <Cadastro/> : <Login/>}
+               
+                    
+                 
                 
                
             </section>

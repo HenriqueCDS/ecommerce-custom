@@ -4,7 +4,7 @@ import { mandaDadosCadastro } from '../../services/servicoCadastro.js'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function Cadastro(evento) {
+export default function Cadastro() {
 
 
   const [nome, setNome] = useState("")
@@ -14,10 +14,9 @@ export default function Cadastro(evento) {
 
   const navigate = useNavigate();
 
-  async function gerenciaNovoCadastro(evento){
-    evento.preventDefault();
+  async function gerenciaNovoCadastro(){
     const response = await mandaDadosCadastro({nome, sobreNome, email, senha})
-    if(response.status === 200) return navigate('/');
+    if(response.status === 200) return navigate('/login');
  
 
   }
