@@ -1,7 +1,7 @@
  .pesquisa{
     display: flex;
     flex-direction: column;
-    width: 40%;
+
 }
 .pesquisa .containerInput{
     display: flex;
@@ -13,7 +13,7 @@
 input{
     border: 1px solid #FFF;
     background: transparent;
-    padding: 20px 100px;
+    padding: 2vh 1vw;
     color: #FFF;
     font-size: 1rem;
     width: 100%;

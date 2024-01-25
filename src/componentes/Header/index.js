@@ -33,6 +33,18 @@ function Header() {
           <h1>Shop<span>Now</span></h1>
         </div>
       </CabecalhoLink>
+      <nav className={header.navbar}>
+     
+
+        <CabecalhoLink url='/favoritos'> 
+          Favoritos
+        </CabecalhoLink>
+
+        <CabecalhoLink url='/cart'> 
+          Meus produtos
+        </CabecalhoLink>
+      </nav>
+ 
       <Seachbar />
       <nav className={header.navbar}>
         <CabecalhoLink url='/login'> <User size={28} />
@@ -44,7 +56,7 @@ function Header() {
         </CabecalhoLink>
 
         <CabecalhoLink url='/cart'> <ShoppingCart size={28} />
-          Meus produtos
+        Carrinho
         </CabecalhoLink>
       </nav>
     </header>
