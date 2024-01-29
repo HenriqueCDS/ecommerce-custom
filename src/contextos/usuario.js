@@ -11,6 +11,7 @@ export const UsuarioProvider = ({ children }) => {
 
 
   const updateUsuario = (nome, token) => {
+    localStorage.setItem("token", token);
     setUsuario({ nome, token });
   };
 

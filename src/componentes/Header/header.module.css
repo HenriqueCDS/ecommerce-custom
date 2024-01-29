@@ -10,7 +10,8 @@
 .cabecalho .navbar{
   display: flex;
   flex-direction: row;
-  font-size: 1px;
+ 
+  align-items: center;
  
  
 }

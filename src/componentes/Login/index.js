@@ -23,9 +23,10 @@ export default function Login() {
       }
   
         const Token = await verificaToken(usuarioToken.token);
-       
+
+
         updateUsuario(usuarioToken.user.primeiroNome, usuarioToken.token);
-        
+
         if(Token.status === 200){
           alert("Login feito com sucesso!");
           return navigate('/');

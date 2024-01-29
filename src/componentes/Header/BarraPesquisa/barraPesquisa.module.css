@@ -19,14 +19,14 @@ input{
     width: 100%;
 }
  .result {
-  border: solid 1px black;
+
   width: 100%;
   cursor: pointer;
  
 } .result .resutItem{
     
     display: column;
-    
+    border: solid 1px black;
     list-style: none;
     background-color: #FFF;
     transition: 1s ease-in-out;
@@ -38,7 +38,7 @@ input{
 } 
 .result .resutItem .item{
     
-    padding: 2vh 20vw;
+    padding: 2vh 7vw;
     transition: 1s ease-in-out;
 }
 .result .resutItem .item .link{
@@ -59,7 +59,7 @@ input{
 
 @media only screen and (max-height: 1000px) {
     .result .resutItem .item{
-        padding: 2vh 11.1vw;
+        padding: 2vh 6vw;
         
     }    
 }

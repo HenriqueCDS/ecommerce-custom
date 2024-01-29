@@ -36,17 +36,17 @@ function Header() {
       <nav className={header.navbar}>
      
 
-        <CabecalhoLink url='/favoritos'> 
-          Favoritos
-        </CabecalhoLink>
+   
 
         <CabecalhoLink url='/cart'> 
           Meus produtos
         </CabecalhoLink>
       </nav>
  
-      <Seachbar />
+     
+     
       <nav className={header.navbar}>
+      
         <CabecalhoLink url='/login'> <User size={28} />
           {logado}
         </CabecalhoLink>
@@ -58,7 +58,12 @@ function Header() {
         <CabecalhoLink url='/cart'> <ShoppingCart size={28} />
         Carrinho
         </CabecalhoLink>
+        <Seachbar />  
+
+    
+      
       </nav>
+    
     </header>
 
   );
