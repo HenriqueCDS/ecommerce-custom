@@ -7,25 +7,28 @@ import CabecalhoLink from './CabecalhoLink';
 import Seachbar from './BarraPesquisa/index'
 import { useUsuario } from '../../contextos/usuario';
 
+import { jwtDecode } from "jwt-decode";
+
 function Header() {
   const [logado, setLogado] = useState('')
   const contexto = useUsuario()
+ 
+  
 
   useEffect(() => {
+    const tokenUser = localStorage.getItem('token');
       
-      if(!contexto.Usuario.nome){
+      if(!tokenUser){
         setLogado('Entrar')
       }else{
-        setLogado(`Bem vindo, ${contexto.Usuario.nome}`)
+        const decoded = jwtDecode(tokenUser);
+        console.log(decoded)
+        setLogado(`Bem vindo, ${decoded.nome}`)
       }
     
   });
 
 
-
-  
-  
-  
   return (
     <header className={header.cabecalho}>
       <CabecalhoLink url="/">

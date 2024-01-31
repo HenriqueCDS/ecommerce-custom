@@ -8,7 +8,6 @@ async function geraToken({ email, senha }) {
             email: email,
             senha: senha   
         })
-        console.log(response.data);
         if(response.status === 200){
             return response.data;  
         }
