@@ -4,3 +4,34 @@
 .modelo h3{
     color: red;
 }
+.container{
+    width: 100%;
+    max-width: 86rem;
+    margin: 0 auto;
+}
+.container h2{
+   font-size: 50px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.marcas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.marcas div{
+    border: 1px gray solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: large;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.marcas div img{
+    width: 100px;
+}
