@@ -1,7 +1,6 @@
 // components/Footer.js
 import footer from './footer.module.css';
 import React from 'react';
-import logo from './logo.png'
 
 import { InstagramLogo, FacebookLogo, TwitterLogo,Phone,MapPin,Envelope    } from 'phosphor-react';
 function Footer() {
@@ -10,7 +9,7 @@ function Footer() {
        
         <div className={footer.footerContainer}>
                     <div className={footer.footerLogo}>
-                        <h1 >Shop <span>Now</span></h1>
+                        <h1>Shop<span>Now</span></h1>
                     </div>
                     <div className={footer.footerLinks}>
                         <h3>Navbar</h3>
