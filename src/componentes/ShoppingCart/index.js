@@ -26,8 +26,7 @@ function ShoppingCart() {
           <h1>Total: { valorTotal.toFixed(2)}</h1>
           
         </div>
-        <button
-        disabled={carrinho.length==0?true:false}
+        <button  disabled={carrinho.length==0?true:false}
         >Continuar</button>
         
         
