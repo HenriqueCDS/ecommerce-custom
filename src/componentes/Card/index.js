@@ -14,7 +14,6 @@ function Card({ id, name, image, price }) {
   return (
     
       <div className={style.container} >
-      
         <img src={image} alt={name} />
         <h3>{name}</h3>
         <p>{price}</p>
@@ -24,8 +23,6 @@ function Card({ id, name, image, price }) {
           }}/></button>
           <Link className ={style.link}  to={`/product/${id}`}> <button><ShoppingCart size={24}/></button></Link>
         </div>
-
-
       </div>
 
   );

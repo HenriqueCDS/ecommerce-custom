@@ -21,7 +21,6 @@ function CardList() {
   
   return (
   
- 
     <div className={styles.container}>
       {
         

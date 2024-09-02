@@ -5,7 +5,7 @@ import { pegaProdutoEImagem } from '../../services/servicoProdutos';
 import style from './ProductDetalhes.module.css';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import { useCarrinhoContext } from '../../contextos/carrinho';
-import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import {  Autoplay } from 'swiper/modules';
 
 
 
@@ -22,6 +22,7 @@ function ProductDetails() {
   async function handlerProdutos () {
     const response = await pegaProdutoEImagem(id);
    
+    console.log(response)
     setProduto(response[0].Produto);
     setImgs([
       response[0].img1,
@@ -49,13 +50,10 @@ function ProductDetails() {
 
      
           <Swiper 
-            modules={[EffectCoverflow, Autoplay]}
+            modules={[ Autoplay]}
             autoplay={{ delay: 4000 }}
-            effectcoverflow={{ slideShadows: true }}
-            effect='coverflow'
             slidesPerView={1}
             pagination={{ clickable: true }}
-            
             className={style.block1}
           >
             {imgs.map((item) => (

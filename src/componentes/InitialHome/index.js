@@ -1,24 +1,24 @@
 import home from './homes.module.css';
 import { Swiper, SwiperSlide, } from 'swiper/react';
-import { EffectCoverflow, Autoplay } from 'swiper/modules';
-
+import {  Autoplay } from 'swiper/modules';
+import img from "../../assets/img/3737_AWBANNER_DESKTOP1.png"; 
+import img2 from "../../assets/img/3737_AWBANNER_DESKTOP2.png"; 
+import img3 from "../../assets/img/3737_AWBANNER_DESKTOP3.png";
 
 export default function InitialHome() {
     const data = [
 
-        { id: '1', image: 'https://artwalk.vteximg.com.br/arquivos/ids/434947/3737 - AW BANNER - DESKTOP 3.png?v=638276176489030000' },
-        { id: '2', image: 'https://artwalk.vteximg.com.br/arquivos/ids/434933/3737 - AW BANNER - DESKTOP 2.png?v=638273796587200000' },
-        { id: '3', image: 'https://artwalk.vteximg.com.br/arquivos/ids/434930/3737 - AW BANNER - DESKTOP 1.png?v=638273774150700000' }
+        { id: '1', image:img},
+        { id: '2', image:img2},
+        { id: '3', image:img3}
     ]
 
+     console.log(data)
     return (
-
         <section className={home.initalHome}>
             <Swiper
-                modules={[EffectCoverflow, Autoplay]}
+                modules={[ Autoplay]}
                 autoplay={{delay:4000}}
-                effectcoverflow={{slideShadows: true}}
-                effect='coverflow'
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 navigation
@@ -30,17 +30,9 @@ export default function InitialHome() {
                             alt='Imagens de livros'
                             className={home.slideItem}
                         />
-
                     </SwiperSlide>
-
                 ))}
-            </Swiper>
-
-            <div>
-
-            </div>
-
-
+            </Swiper>          
         </section>
 
 

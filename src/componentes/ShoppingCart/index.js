@@ -1,7 +1,6 @@
 // components/ShoppingCart.js
 import React from 'react';
 import style from './ShoppingCart.module.css';
-import produtos from './produtos.json';
 import ProdutoCart from '../ProdutoCart'
 import { useCarrinhoContext } from '../../contextos/carrinho';
 
@@ -14,6 +13,7 @@ function ShoppingCart() {
         <h2>
           Carrinho:
         </h2>
+        produto.
         {carrinho.map(produto => (
           <ProdutoCart
             {...produto}
@@ -26,12 +26,7 @@ function ShoppingCart() {
           <h1>Total: { valorTotal.toFixed(2)}</h1>
           
         </div>
-        <button  disabled={carrinho.length==0?true:false}
-        >Continuar</button>
-        
-        
-      
-   
+        <button  disabled={carrinho.length===0?true:false}> Continuar </button>
     </div>
   );
 }
