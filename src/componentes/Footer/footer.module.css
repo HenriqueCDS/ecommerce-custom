@@ -1,10 +1,10 @@
 .footer {
     
-    margin-top: 5%;
     background-color:#02040F;
     color:var(--color2);
     padding: 1rem;
-
+    width: 100%;
+    margin-top: 5%;
    
 }
 
@@ -46,7 +46,7 @@
   
   .footerLinks ul li a {
     
-    color: #555555;
+    color: #868585;
     text-decoration: none;
     transition: 1s ease;
   }
@@ -63,7 +63,7 @@
 
   
   .footerContact ul li a {
-    color: #555555;
+    color:  #868585;
     text-decoration: none;
   }
   .footerBottom {

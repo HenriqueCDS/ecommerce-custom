@@ -16,4 +16,13 @@ body {
 html{
 	scroll-behavior: smooth;
 	font-family: 'Montserrat';    
+
+
+
+}
+
+.App{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
