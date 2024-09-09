@@ -45,10 +45,16 @@ export default function Login() {
         <h2>Bem-vindo novamente!</h2>
         <h3>Preencha seus dados</h3>
         
-        <EnvelopeSimple size={28} />
-        <input type="text" placeholder="Nome" name="uname" onChange={(event) => setEmail(event.target.value)} required /> 
-        <LockSimple size={28} />
-        <input type="password" placeholder="Senha" name="psw" onChange={(event) => setSenha(event.target.value)} required />
+        <div>
+          <EnvelopeSimple size={28} />
+          <input type="text" placeholder="Nome" name="uname" onChange={(event) => setEmail(event.target.value)} required /> 
+        </div>
+        
+        <div>
+          <LockSimple size={28} />
+          <input type="password" placeholder="Senha" name="psw" onChange={(event) => setSenha(event.target.value)} required />
+        </div>
+        
         <button type="submit">Login</button>
     </form>
 

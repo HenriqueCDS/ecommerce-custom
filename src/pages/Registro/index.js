@@ -34,6 +34,7 @@ export default function Registro() {
                     <h3>Acesse sua conta agora mesmo.</h3>
                     <button type="submit" onClick={() => TemLogin()} >{Cadastrado}</button>
                 </div>
+                
                 {Logado ? <Cadastro/> : <Login/>}
                
                     

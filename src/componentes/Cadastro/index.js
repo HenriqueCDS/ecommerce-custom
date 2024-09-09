@@ -27,17 +27,19 @@ export default function Cadastro() {
         <h2>Crie sua conta</h2>
         <h3>Preencha seus dados</h3>
         
-        <User size={28}  />
-        
-        <input type="text" placeholder="Nome" name="uname" onChange={(event) => setNome(event.target.value)} required /> 
-        <input type="text" placeholder="Sobre nome" name="uname" onChange={(event) => setSobreNome(event.target.value)} required /> 
-        
-        <EnvelopeSimple size={28} />
-        
-        <input type="text" placeholder="Email" name="email" onChange={(event) => setEmail(event.target.value)} required />
-        <LockSimple size={28} />
-        
-        <input type="password" placeholder="Senha" name="psw" onChange={(event) => setSenha(event.target.value)} required />
+        <div>
+          <User size={28} />
+          <input type="text" placeholder="Nome Completo" name="uname" onChange={(event) => setNome(event.target.value)} required /> 
+        </div>
+        <div>
+          <EnvelopeSimple size={28} />
+          <input type="text" placeholder="Email" name="email" onChange={(event) => setEmail(event.target.value)} required />
+        </div>
+
+        <div>
+          <LockSimple size={28} />
+          <input type="password" placeholder="Senha" name="psw" onChange={(event) => setSenha(event.target.value)} required />
+        </div>
         <button type="submit">Cadastrar</button>
     </form>
 

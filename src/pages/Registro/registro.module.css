@@ -1,12 +1,11 @@
 .container{
-    height: 30rem;
-    width: 70rem;
+    max-height: 30rem;
+    max-width: 70rem;
+    width: 100%;
     margin: auto;
-    margin-top: 10rem;
     display: grid;
-    grid-template-columns: 20rem 50rem;
+    grid-template-columns: 30% 70%;
     align-self: center;
-    background-color: #FFFAFA;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
